@@ -14,6 +14,8 @@ Initial analysis used model with 2 layers (80, 40), 100 epochs, relu activation 
 
 - Observe that the categorical features contain 1 or 2 dominate categories with other less significant categories. Approach was to reduce number of categories in each to no more than 6, with target of 3 or 4, based on categorical percentage, and place remaining categories in 'Other' category. 
 
+- Additionally 2 features were removed as non-beneficial, EIN and NAME, in both the reference model and this model. Additionally, 2 other features were removed, STATUS and SPECIAL_CONSIDERATIONS, as values in both columns were basically a constant value. 
+
 - After one-hot encoding, the feature set was reduced from 112, before reduction
     - ![all_features](Images/all_features.png)
 - To 25 after feature reduction
